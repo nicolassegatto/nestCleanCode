@@ -1,5 +1,7 @@
 @baseUrl = http://localhost:3333
 
+@authToken = {{authenticate.response.body.access_token}}
+
 # @name create_account
 POST {{baseUrl}}/accounts
 Content-Type: application/json
@@ -17,6 +19,18 @@ POST {{baseUrl}}/sessions
 Content-Type: application/json
 
 {
-  "email": "nico",
-  "password": "123"
+  "email": "nicolas1@teste.com",
+  "password": "12345"
+}
+
+###
+
+# @name create_question
+POST {{baseUrl}}/question
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+  "title": "Qual a cor do cavalo branco de Napoleão?",
+  "content": "A pergunta é autoexplicativa"
 }
