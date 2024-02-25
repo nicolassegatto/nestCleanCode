@@ -26,11 +26,18 @@ Content-Type: application/json
 ###
 
 # @name create_question
-POST {{baseUrl}}/question
+POST {{baseUrl}}/questions
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
 {
-  "title": "Qual a cor do cavalo branco de Napoleão?",
-  "content": "A pergunta é autoexplicativa"
+  "title": "Qual a cor do cavalo branco de Napoleão?222",
+  "content": "A pergunta é autoexplicativa222"
 }
+
+###
+
+# @name fetch_recent_questions
+GET  {{baseUrl}}/questions?page=1&limit=1
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
