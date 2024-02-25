@@ -31,7 +31,7 @@ Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
 {
-  "title": "Qual a cor do cavalo branco de Napoleão?222",
+  "title": "Qual a cor do cavalo branco des Napoleão?222",
   "content": "A pergunta é autoexplicativa222"
 }
 

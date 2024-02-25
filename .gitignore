@@ -58,6 +58,5 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 #bd
 data
 
-# keys
-
-.pem
+# Ignore sensitive information
+*.pem
